@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Delete account
+{% endblock %}
+
+
+{% block main %}
+    <h3>
+        <p class="text-center text-danger">Deleting your account will delete all your data!</p>
+    </h3>
+    <form action="/delete" method="post">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="check" id="delete-check" required>
+            <label class="form-check-label" for="delete-check">
+              I have understood the effects and wish to delete my account.
+            </label>
+        </div>
+        <button class="btn btn-primary" type="submit">Delete account</button>
+    </form>
+{% endblock %}

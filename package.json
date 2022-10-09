@@ -1,0 +1,19 @@
+{
+  "name": "simple-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.34.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.5",
+    "src": "^1.1.2"
+  }
+}

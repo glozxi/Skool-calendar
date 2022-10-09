@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Complete event
+{% endblock %}
+
+{% block main %}
+  <script>let event_list = {{ event_list|safe }};</script>
+  <script src="{{url_for('static', filename='src/clear.js')}}" type="module"></script>
+
+  <form id="date-form" onsubmit="return false">
+    <div class="form-group">
+      <input type="date" id="date-input">
+      <button type="submit" class="btn btn-primary" id="date-submit">Submit date</button>
+    </div>
+  </form>
+
+  <form name="checkbox-form" id="checkbox-form" action="/clear" method="post"></form>
+{% endblock %}
